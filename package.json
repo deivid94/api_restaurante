@@ -2,7 +2,9 @@
   "name": "api_restaurante",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "tsc"
+  },
   "keywords": [],
   "author": "Deivid Dioclecio Martins",
   "license": "ISC",
