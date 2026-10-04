@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "Deivid Dioclecio Martins",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.1.2",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
