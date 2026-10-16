@@ -1,6 +1,7 @@
 import { Router } from 'express'
-import { privateDecrypt } from 'node:crypto'
+import {getProduct, listAllProducts} from '../controllers/product.controllers'
 
 const produtcRoutes = Router()
-produtcRoutes.get('/')
+produtcRoutes.get('/', listAllProducts)
+produtcRoutes.get('/:id', getProduct)
 export default produtcRoutes 
