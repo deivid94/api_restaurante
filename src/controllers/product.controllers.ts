@@ -1,5 +1,6 @@
 
 import  {NextFunction, type Request, type Response} from "express";
+import { HttpError } from "@/utils/erro";
 export async function listAllProducts(req:Request,res:Response, next:NextFunction){
  try {
      //chamar o middleware -> chamar os service -> repository 
@@ -12,7 +13,7 @@ export async function listAllProducts(req:Request,res:Response, next:NextFunctio
 export async function getProduct(req:Request,res:Response, next:NextFunction){
     try {
         const {id} = req.params
-        res.status(201).json({"msg":"Produto encontrado"})
+        res.status(200).json({"msg":"Produto encontrado"})
     }catch(error){
         next(error)
         
