@@ -4,14 +4,17 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile ./src/knexfile.ts"
   },
   "keywords": [],
   "author": "Deivid Dioclecio Martins",
   "license": "ISC",
   "description": "API para gerenciar pedidos de uma resturante",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
